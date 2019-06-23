@@ -2,4 +2,4 @@
 
 pkill -9 java
 cd /home/showdown
-nohup ./start.sh &
+nohup ./start.sh </dev/null >/dev/null 2>&1 &
