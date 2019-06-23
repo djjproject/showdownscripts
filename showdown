@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/showdown
+/home/showdown/cli.sh

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkill -9 java
+cd /home/showdown
+nohup ./start.sh &
