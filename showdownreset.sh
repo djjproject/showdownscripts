@@ -7,7 +7,7 @@ fi
 while true; do
     sleep 5
     SYSTEMTIME=`date "+%s"`
-    SHOWDOWNTIME=`date -d "$(tail -n 1 /home/showdown/ShowDown.log | awk '{print $2}' | awk -F "," '{print $1}')" "+%s"`
+    SHOWDOWNTIME=`date -d "$(tail -n 1 /home/showdown/ShowDown.log | awk '{print $1" "$2}' | awk -F "," '{print $1}')" "+%s"`
     DIFF=`expr $SYSTEMTIME - $SHOWDOWNTIME`
 
     echo "showdown time : $SHOWDOWNTIME"
