@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pkill -9 java
+pkill -9 -ef "Server.jar"
 cd /home/showdown
 nohup ./start.sh </dev/null >/dev/null 2>&1 &
